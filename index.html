@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shubham Kumar Jha | Python Backend Developer</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+:root{
+--primary:#2563eb;
+--secondary:#1e3a8a;
+--accent:#0ea5e9;
+--light:#f8fafc;
+--dark:#0f172a;
+--text:#334155;
+}
+
+body{
+margin:0;
+font-family:'Segoe UI',system-ui;
+background:var(--light);
+}
+
+/* PRINT BUTTON */
+
+.print-btn{
+position:fixed;
+top:15px;
+right:15px;
+background:var(--primary);
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-weight:600;
+z-index:999;
+}
+
+/* MAIN CONTAINER */
+
+.resume{
+width:1000px;
+margin:30px auto;
+background:white;
+display:flex;
+box-shadow:0 10px 40px rgba(0,0,0,0.15);
+border-radius:12px;
+overflow:hidden;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:300px;
+background:linear-gradient(var(--secondary),var(--primary));
+color:white;
+padding:30px;
+}
+
+.profile{
+text-align:center;
+}
+
+.profile i{
+font-size:70px;
+margin-bottom:10px;
+}
+
+.sidebar h2{
+font-size:18px;
+margin-top:25px;
+border-bottom:1px solid rgba(255,255,255,0.3);
+padding-bottom:5px;
+}
+
+.sidebar ul{
+padding-left:18px;
+}
+
+.sidebar li{
+margin-bottom:6px;
+font-size:14px;
+}
+
+/* MAIN CONTENT */
+
+.main{
+flex:1;
+padding:35px;
+}
+
+.name{
+font-size:32px;
+font-weight:700;
+color:var(--dark);
+}
+
+.role{
+color:var(--primary);
+font-weight:600;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+margin-bottom:15px;
+}
+
+.contact a{
+color:var(--primary);
+text-decoration:none;
+font-weight:500;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+/* SECTION */
+
+.section{
+margin-top:20px;
+}
+
+.section h2{
+font-size:18px;
+border-bottom:2px solid var(--primary);
+padding-bottom:5px;
+}
+
+.section li{
+margin-bottom:10px;
+}
+
+/* PROJECT */
+
+.project-title{
+font-weight:600;
+}
+
+.tech{
+color:var(--primary);
+font-size:13px;
+}
+
+a{
+color:var(--accent);
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+/* PRINT */
+
+@media print{
+
+.print-btn{
+display:none;
+}
+
+.resume{
+width:100%;
+margin:0;
+box-shadow:none;
+}
+
+body{
+-webkit-print-color-adjust:exact;
+print-color-adjust:exact;
+}
+
+a{
+color:#2563eb !important;
+text-decoration:underline;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="print-btn" onclick="window.print()">
+<i class="fa fa-print"></i> Save as PDF
+</button>
+
+<div class="resume">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="profile">
+<i class="fa fa-user-circle"></i>
+<h3>Shubham Kumar Jha</h3>
+</div>
+
+<h2>Profile</h2>
+
+<p>
+Python Backend Developer with strong experience in FastAPI,
+automation, AI integration, and scalable backend systems.
+</p>
+
+<h2>Skills</h2>
+
+<ul>
+<li>Python, FastAPI, Flask</li>
+<li>REST API Development</li>
+<li>MySQL, Database Design</li>
+<li>AI API Integration</li>
+<li>Automation Scripts</li>
+<li>Git, GitHub</li>
+<li>Linux, VPS</li>
+<li>HTML, CSS, JavaScript</li>
+<li>Flutter Mobile Development</li>
+</ul>
+
+<h2>Education</h2>
+
+<p>
+B.Tech Computer Science<br>
+Central University of Jammu<br>
+2023 – Present
+</p>
+
+<p>12th Board — Haryana Board (2022)</p>
+<p>10th Board — Haryana Board (2020)</p>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<div class="name">Shubham Kumar Jha</div>
+
+<div class="role">
+Python Backend Developer | FastAPI Developer | API Engineer
+</div>
+
+<div class="contact">
+
+<div>
+<i class="fa fa-envelope"></i>
+<a href="mailto:shubhamjha2208@gmail.com">
+shubhamjha2208@gmail.com
+</a>
+</div>
+
+<div>
+<i class="fa fa-phone"></i>
+<a href="tel:+919797301726">
++91 9797301726
+</a>
+</div>
+
+<div>
+<i class="fab fa-github"></i>
+<a href="https://github.com/ShUBHaMJHA9" target="_blank">
+github.com/ShUBHaMJHA9
+</a>
+</div>
+
+<div>
+<i class="fab fa-linkedin"></i>
+<a href="https://linkedin.com/in/shubhamjha200" target="_blank">
+linkedin.com/in/shubhamjha200
+</a>
+</div>
+
+</div>
+
+<!-- BACKEND PROJECTS -->
+
+<div class="section">
+
+<h2>Backend Projects</h2>
+
+<ul>
+
+<li>
+<span class="project-title">
+YouTube Downloader API
+</span><br>
+<span class="tech">FastAPI, MySQL, yt-dlp</span><br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+<span class="project-title">
+Authentication REST API
+</span><br>
+<span class="tech">FastAPI, JWT</span><br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+<span class="project-title">
+Google Drive Automation
+</span><br>
+<span class="tech">Python, Google API</span><br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+<span class="project-title">
+File Upload API
+</span><br>
+<span class="tech">FastAPI</span><br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- AI PROJECTS -->
+
+<div class="section">
+
+<h2>AI Projects</h2>
+
+<ul>
+
+<li>
+AI Chatbot using LLM API<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+Movie Recommendation System<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- WEB PROJECTS -->
+
+<div class="section">
+
+<h2>Web Projects</h2>
+
+<ul>
+
+<li>
+Netflix Clone Website<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+ExamNET Platform<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+Portfolio Website<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- MOBILE PROJECTS -->
+
+<div class="section">
+
+<h2>Mobile Projects</h2>
+
+<ul>
+
+<li>
+Nexfix Mobile App (Flutter)<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+<li>
+Gurukul Learning App<br>
+<a href="https://github.com/ShUBHaMJHA9">
+GitHub Link
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- CERTIFICATIONS -->
+
+<div class="section">
+
+<h2>Certifications</h2>
+
+<ul>
+<li>Python — HackerRank</li>
+<li>Artificial Intelligence — Infosys</li>
+<li>Java — GeeksforGeeks</li>
+<li>Problem Solving — HackerRank</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
