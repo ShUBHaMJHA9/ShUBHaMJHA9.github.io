@@ -13,9 +13,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 :root{
 --primary:#2563eb;
---secondary:#1e3a8a;
+--secondary:#1e40af;
 --accent:#0ea5e9;
---light:#f8fafc;
+--light:#f1f5f9;
 --dark:#0f172a;
 --text:#334155;
 }
@@ -35,17 +35,17 @@ right:15px;
 background:var(--primary);
 color:white;
 border:none;
-padding:12px 20px;
+padding:12px 18px;
 border-radius:8px;
 cursor:pointer;
 font-weight:600;
 z-index:999;
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 
 .resume{
-width:1000px;
+width:1100px;
 margin:30px auto;
 background:white;
 display:flex;
@@ -57,8 +57,8 @@ overflow:hidden;
 /* SIDEBAR */
 
 .sidebar{
-width:300px;
-background:linear-gradient(var(--secondary),var(--primary));
+width:320px;
+background:linear-gradient(180deg,var(--secondary),var(--primary));
 color:white;
 padding:30px;
 }
@@ -67,14 +67,16 @@ padding:30px;
 text-align:center;
 }
 
-.profile i{
-font-size:70px;
+.profile img{
+width:130px;
+height:130px;
+border-radius:50%;
+border:4px solid white;
 margin-bottom:10px;
 }
 
 .sidebar h2{
-font-size:18px;
-margin-top:25px;
+margin-top:20px;
 border-bottom:1px solid rgba(255,255,255,0.3);
 padding-bottom:5px;
 }
@@ -84,11 +86,10 @@ padding-left:18px;
 }
 
 .sidebar li{
-margin-bottom:6px;
-font-size:14px;
+margin-bottom:8px;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 
 .main{
 flex:1;
@@ -96,7 +97,7 @@ padding:35px;
 }
 
 .name{
-font-size:32px;
+font-size:34px;
 font-weight:700;
 color:var(--dark);
 }
@@ -104,7 +105,7 @@ color:var(--dark);
 .role{
 color:var(--primary);
 font-weight:600;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 /* CONTACT */
@@ -112,8 +113,8 @@ margin-bottom:10px;
 .contact{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:8px;
-margin-bottom:15px;
+gap:10px;
+margin-bottom:20px;
 }
 
 .contact a{
@@ -122,27 +123,22 @@ text-decoration:none;
 font-weight:500;
 }
 
-.contact a:hover{
-text-decoration:underline;
-}
-
 /* SECTION */
 
 .section{
-margin-top:20px;
+margin-top:25px;
 }
 
 .section h2{
-font-size:18px;
 border-bottom:2px solid var(--primary);
 padding-bottom:5px;
 }
 
-.section li{
-margin-bottom:10px;
-}
-
 /* PROJECT */
+
+.project{
+margin-bottom:14px;
+}
 
 .project-title{
 font-weight:600;
@@ -153,13 +149,9 @@ color:var(--primary);
 font-size:13px;
 }
 
-a{
+.project a{
+font-size:14px;
 color:var(--accent);
-text-decoration:none;
-}
-
-a:hover{
-text-decoration:underline;
 }
 
 /* PRINT */
@@ -177,13 +169,7 @@ box-shadow:none;
 }
 
 body{
--webkit-print-color-adjust:exact;
 print-color-adjust:exact;
-}
-
-a{
-color:#2563eb !important;
-text-decoration:underline;
 }
 
 }
@@ -194,7 +180,7 @@ text-decoration:underline;
 <body>
 
 <button class="print-btn" onclick="window.print()">
-<i class="fa fa-print"></i> Save as PDF
+<i class="fa fa-print"></i> Save PDF
 </button>
 
 <div class="resume">
@@ -204,32 +190,35 @@ text-decoration:underline;
 <div class="sidebar">
 
 <div class="profile">
-<i class="fa fa-user-circle"></i>
-<h3>Shubham Kumar Jha</h3>
-</div>
 
-<h2>Profile</h2>
+<img src="https://github.com/ShUBHaMJHA9.png">
+
+<h3>Shubham Kumar Jha</h3>
 
 <p>
-Python Backend Developer with strong experience in FastAPI,
-automation, AI integration, and scalable backend systems.
+Python Backend Developer specialized in FastAPI,
+AI integration, REST APIs, and scalable backend systems.
 </p>
 
-<h2>Skills</h2>
+</div>
+
+<h2><i class="fa fa-code"></i> Skills</h2>
 
 <ul>
+
 <li>Python, FastAPI, Flask</li>
 <li>REST API Development</li>
 <li>MySQL, Database Design</li>
-<li>AI API Integration</li>
+<li>AI Integration, OpenAI API</li>
 <li>Automation Scripts</li>
-<li>Git, GitHub</li>
-<li>Linux, VPS</li>
+<li>Git, GitHub, Version Control</li>
+<li>Linux, VPS Deployment</li>
 <li>HTML, CSS, JavaScript</li>
 <li>Flutter Mobile Development</li>
+
 </ul>
 
-<h2>Education</h2>
+<h2><i class="fa fa-graduation-cap"></i> Education</h2>
 
 <p>
 B.Tech Computer Science<br>
@@ -270,14 +259,14 @@ shubhamjha2208@gmail.com
 
 <div>
 <i class="fab fa-github"></i>
-<a href="https://github.com/ShUBHaMJHA9" target="_blank">
+<a href="https://github.com/ShUBHaMJHA9">
 github.com/ShUBHaMJHA9
 </a>
 </div>
 
 <div>
 <i class="fab fa-linkedin"></i>
-<a href="https://linkedin.com/in/shubhamjha200" target="_blank">
+<a href="https://linkedin.com/in/shubhamjha200">
 linkedin.com/in/shubhamjha200
 </a>
 </div>
@@ -288,51 +277,39 @@ linkedin.com/in/shubhamjha200
 
 <div class="section">
 
-<h2>Backend Projects</h2>
+<h2><i class="fa fa-server"></i> Backend Projects</h2>
 
-<ul>
+<div class="project">
+<div class="project-title">YouTube Downloader API</div>
+<div class="tech">FastAPI, MySQL, yt-dlp</div>
+Built scalable API to download videos and manage metadata.
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-<span class="project-title">
-YouTube Downloader API
-</span><br>
-<span class="tech">FastAPI, MySQL, yt-dlp</span><br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
+<div class="project">
+<div class="project-title">Authentication REST API</div>
+<div class="tech">FastAPI, JWT, MySQL</div>
+Secure authentication system with login, signup, token verification.
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-<span class="project-title">
-Authentication REST API
-</span><br>
-<span class="tech">FastAPI, JWT</span><br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
+<div class="project">
+<div class="project-title">File Upload and Management API</div>
+<div class="tech">FastAPI</div>
+File upload, storage, and retrieval backend system.
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-<span class="project-title">
-Google Drive Automation
-</span><br>
-<span class="tech">Python, Google API</span><br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-<li>
-<span class="project-title">
-File Upload API
-</span><br>
-<span class="tech">FastAPI</span><br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-</ul>
+<div class="project">
+<div class="project-title">Google Drive Automation System</div>
+<div class="tech">Python, Google API</div>
+Automated file uploads and cloud management.
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
 </div>
 
@@ -340,25 +317,19 @@ GitHub Link
 
 <div class="section">
 
-<h2>AI Projects</h2>
+<h2><i class="fa fa-robot"></i> AI Projects</h2>
 
-<ul>
+<div class="project">
+AI Chatbot using LLM API — intelligent chatbot system
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-AI Chatbot using LLM API<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-<li>
-Movie Recommendation System<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-</ul>
+<div class="project">
+Movie Recommendation System using Machine Learning
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
 </div>
 
@@ -366,32 +337,25 @@ GitHub Link
 
 <div class="section">
 
-<h2>Web Projects</h2>
+<h2><i class="fa fa-globe"></i> Web Projects</h2>
 
-<ul>
+<div class="project">
+Netflix Clone — Full frontend streaming UI
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-Netflix Clone Website<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
+<div class="project">
+ExamNET Platform — Online exam platform
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-ExamNET Platform<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-<li>
-Portfolio Website<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-</ul>
+<div class="project">
+Portfolio Website — Personal portfolio
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
 </div>
 
@@ -399,25 +363,19 @@ GitHub Link
 
 <div class="section">
 
-<h2>Mobile Projects</h2>
+<h2><i class="fa fa-mobile"></i> Mobile Projects</h2>
 
-<ul>
+<div class="project">
+Netflix Mobile App — Flutter based streaming app
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
-<li>
-Nexfix Mobile App (Flutter)<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-<li>
-Gurukul Learning App<br>
-<a href="https://github.com/ShUBHaMJHA9">
-GitHub Link
-</a>
-</li>
-
-</ul>
+<div class="project">
+Gurukul Learning App — Flutter education app
+<br>
+<a href="https://github.com/ShUBHaMJHA9">GitHub</a>
+</div>
 
 </div>
 
@@ -425,7 +383,7 @@ GitHub Link
 
 <div class="section">
 
-<h2>Certifications</h2>
+<h2><i class="fa fa-certificate"></i> Certifications</h2>
 
 <ul>
 <li>Python — HackerRank</li>
